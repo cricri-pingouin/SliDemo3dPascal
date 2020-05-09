@@ -1,5 +1,5 @@
 Program DEMONSTRATION_DE_FIGURES_EN_3D;
-{*** ProgrammÇ par xxx, Mai 19xx ***}
+{*** Programm√© par xxx, Mai 199x ***}
 
 USES crt,Graph;
 
@@ -8,7 +8,7 @@ VAR Driver,Mode,Err   : Integer;
     fin               : char;
     xo,yo,couleur,p,q : integer;
 
-{ ***  Sous-Routines de tracÇ point par point  *** }
+{ ***  Sous-Routines de trac√© point par point  *** }
 
 Procedure TRACE_TORE(x,y:real);
   begin
@@ -198,7 +198,7 @@ y:=-1-1/5;
    end;
 end;
 
-{********  DÇbut Du Programme Principal  ********}
+{********  D√©but Du Programme Principal  ********}
 
 BEGIN
   Clrscr;
@@ -206,7 +206,7 @@ BEGIN
   DetectGraph(Driver,Mode);
   if (Driver<>VGA) or (Mode<>VGAHi) then
     begin
-      Writeln(' Ce programme nÇcessite un Çcran VGA');
+      Writeln(' Ce programme n√©cessite un √©cran VGA');
       Write(' en mode 640x480, 16 couleurs.');
       repeat until keypressed;
       halt;
@@ -236,7 +236,7 @@ BEGIN
 
   xo:=540;yo:=130;
   sphere;
-  outtextXY(495,12,'Sphäre');
+  outtextXY(495,12,'Sph√®re');
 
   xo:=100;yo:=385;
   dome;
@@ -251,6 +251,6 @@ BEGIN
 
   setcolor(11);
   settextstyle(3,0,1);
-  outtextXY(100,455,'xxx, 19xx. Appuyez sur une touche.');
+  outtextXY(100,455,'xxx, 199x. Appuyez sur une touche.');
   fin:=readkey;
 END.
