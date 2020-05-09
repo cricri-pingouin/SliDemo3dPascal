@@ -1,5 +1,4 @@
 Program DEMONSTRATION_DE_FIGURES_EN_3D;
-{*** Programmé par xxx, Mai 199x ***}
 
 USES crt,Graph;
 
